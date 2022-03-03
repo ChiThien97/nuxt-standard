@@ -1,0 +1,29 @@
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 0rem;
+  --font-semi: 600;
+}
+
+/*===== Colores =====*/
+:root {
+  --first-color: #4070F4;
+  --second-color: #0E2431;
+  --main-color: #D70018;
+}
+
+.cps-container {
+  font-family: sans-serif !important;
+  width: 1200px;
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1200px) {
+  .cps-container {
+    max-width: 1200px;
+    width: 100%;
+  }
+}

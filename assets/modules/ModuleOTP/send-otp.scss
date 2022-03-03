@@ -1,0 +1,29 @@
+.cps-otp {
+  margin-bottom: 10px;
+
+  .cps-input-otp {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px 10px;
+    outline: none !important;
+    border: solid 1px #E5E7EB !important;
+    border-radius: 10px;
+    height: 34px;
+    margin-bottom: 5px;
+  }
+
+  .btn-send-OTP {
+    display: block;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    width: 100%;
+    height: 34px;
+    border-radius: 10px;
+    font-size: 14px;
+    background: linear-gradient(#f52f32, #e11b1e);
+    color: white;
+    font-weight: 500;
+    border: none;
+    line-height: 1.5;
+  }
+}

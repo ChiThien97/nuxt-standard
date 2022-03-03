@@ -1,0 +1,143 @@
+header.cps-header {
+  background: #D70018;
+  margin-bottom: 15px;
+  height: 64px;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 1920px;
+
+  nav.cps-navbar {
+    height: 64px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+
+    div.box-logo {
+      svg {
+        width: 161px;
+        height: 30px;
+      }
+    }
+
+    #dropdown-region.dropdown {
+      .box-local-store {
+        width: 120px;
+        display: flex !important;
+        align-items: center;
+        float: left;
+        margin: 0 10px;
+        text-align: center;
+        padding: 3px 5px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        position: relative;
+        cursor: pointer;
+
+        a.dropdown-toggle {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+        }
+
+        .box-icon {
+          height: 15px;
+          float: left;
+          margin-right: 5px;
+
+          svg {
+            height: 15px;
+          }
+        }
+
+        .box-content {
+          text-align: left;
+          color: #ffffff;
+
+          .title {
+            font-size: 10px;
+            line-height: 15px;
+          }
+
+          p {
+            margin-bottom: 0;
+            font-size: 12px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+
+      ul.dropdown-menu {
+        padding: 0 !important;
+        border-radius: 10px;
+        overflow: hidden;
+
+        hr {
+          margin: 0;
+        }
+
+        li .active {
+          background: rgba(215, 0, 24, .7);
+        }
+      }
+    }
+
+    .item-about {
+      display: flex;
+      align-items: center;
+      height: 42px;
+      padding: 3px 5px 3px 5px;
+      border-radius: 10px;
+      text-decoration: none !important;
+      position: relative;
+      cursor: pointer;
+
+      &:hover, &.about-smember {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      .about__box-icon {
+        margin-right: 5px;
+      }
+
+      &.about-smember {
+        flex-flow: column;
+
+        .about__box-icon {
+          margin-right: 0;
+        }
+      }
+
+      .about__box-content {
+        font-size: 12px;
+        line-height: 1.2;
+        color: #ffffff;
+
+        span#items_in_cart {
+          width: 20px;
+          height: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 14px;
+          font-weight: 700;
+          color: #ffffff;
+          position: absolute;
+          left: 10%;
+          bottom: 20%;
+        }
+      }
+    }
+  }
+}
+
+header + .clear {
+  padding-top: 64px;
+}

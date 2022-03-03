@@ -1,0 +1,150 @@
+.modal {
+  padding-right: 0 !important;
+}
+
+.modal-content {
+  padding: 10px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+  border: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  h5 {
+    font-size: 16px;
+    color: #D70018;
+    font-weight: 700;
+  }
+
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 20px;
+  }
+}
+
+.modal-body {
+  position: relative;
+
+  .btn-close-modal {
+    position: absolute;
+    width: fit-content;
+  }
+
+  .cps-modal-login {
+    .cps-devider-text {
+      font-size: 14px;
+      position: relative;
+      margin-bottom: 15px;
+
+      span {
+        color: #444444;
+        padding: 0 10px;
+        position: relative;
+        background: #ffffff;
+        z-index: 1;
+      }
+
+      &:after {
+        content: '';
+        width: 100%;
+        border-top: thin solid rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        z-index: 0;
+      }
+    }
+
+    .block-login-gg-fb {
+      text-align: center;
+      font-weight: 500;
+
+      .custom-btn {
+        font-size: 16px;
+        display: flex;
+        height: 40px;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        p {
+          margin: 0 0 0 15px;
+          font-weight: 500;
+          color: #444444;
+        }
+      }
+
+      .btn-login-gg {
+        border: solid #eb4132 1px;
+        border-radius: 10px;
+
+        p {
+          color: #eb4132;
+        }
+      }
+
+      .btn-login-fb {
+        border: solid #1877f2 1px;
+        border-radius: 10px;
+
+        p {
+          color: #1877f2;
+        }
+      }
+
+      .cps-link {
+        display: inline-block;
+        font-size: 14px;
+        color: #444444;
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 399px) {
+  .modal-header {
+    h5 {
+      font-size: 14px;
+    }
+  }
+  .modal-body {
+    .cps-modal-login {
+      .cps-otp {
+        .cps-input-otp {
+          font-size: 12px;
+        }
+
+        .btn-send-OTP {
+          font-size: 10px;
+        }
+
+      }
+
+      .cps-devider-text {
+        font-size: 10px;
+      }
+
+      .block-login-gg-fb {
+
+        .custom-btn {
+          font-size: 12px;
+        }
+
+        .cps-link {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+

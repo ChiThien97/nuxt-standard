@@ -1,0 +1,12 @@
+@import "assets/global/global";
+
+@import "components/Layouts/header";
+@import "components/Layouts/headerSearch";
+@import "components/Layouts/footer";
+@import "components/Content/Content";
+
+@import "modules/Modal/modal-login";
+@import "modules/Modal/userpopover";
+@import "modules/ModuleOTP/send-otp";
+@import "assets/modules/ModuleSearch/HeaderSearch";
+@import "assets/modules/ModuleComment/comment";
